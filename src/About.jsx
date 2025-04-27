@@ -1,13 +1,16 @@
 import React, { useEffect } from "react";
 import { Card, Row, Col, Container } from "react-bootstrap";
 
-import van from "./Assets/images/about/van.jpg";
+import van from "./assets/images/about/van.jpg"
 import destination from "./assets/images/about/destination.png";
 import best from "./assets/images/about/best-price.png";
 import quick from "./assets/images/about/quick.png";
 
+
 import AOS from "aos";
 import "aos/dist/aos.css";
+
+
 
 const about = [
   {
