@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import { Card, Container, Row, Col } from "react-bootstrap";
-import video from "./Assets/1.mp4";
+// import video from "./Assets/1.mp4";
+import video from "./assets/videos/1.mp4";
+
 
 import { destinations, features, locationIcon, star, time } from "./data";
 
