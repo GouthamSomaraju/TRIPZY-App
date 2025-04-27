@@ -4,9 +4,10 @@ import { Container, Row, Col } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import "./Packages.css"; // Add this line for custom styles
 
-import historic from './Assets/images/packages/historical.jpg';
-import touristic from './Assets/images/packages/touristic.jpg';
-import spiritual from './Assets/images/packages/spritual.jpg';
+
+import historic from './assets/images/packages/historical.jpg';
+import touristic from './assets/images/packages/touristic.jpg';
+import spiritual from './assets/images/packages/spritual.jpg';
 
  import AOS from "aos";
   import "aos/dist/aos.css";
