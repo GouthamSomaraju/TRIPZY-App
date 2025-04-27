@@ -4,7 +4,8 @@ import {
   FaFacebookF, FaTwitter, FaGoogle, FaInstagram, FaLinkedinIn, FaGithub,
   FaMapMarkerAlt, FaEnvelope, FaPhone, FaPrint
 } from 'react-icons/fa';
-import logo2 from './Assets/images/Logo/logo2.png';
+// import logo2 from './Assets/images/Logo/logo2.png';
+import logo2 from './assets/images/Logo/logo2.png';
 import './Footer.css';
 
 const socialLinks = [
