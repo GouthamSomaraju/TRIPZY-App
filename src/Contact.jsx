@@ -3,7 +3,8 @@ import { Card, Row, Col, Container } from "react-bootstrap";
 import { contactUs } from "./data"; // Assuming you have a data.js file with the contactUs array
 import AOS from "aos";
 import "aos/dist/aos.css";
-import boat from "./Assets/images/about/boat2.jpg";
+import boat from "./assets/images/about/boat2.jpg";
+
 
 function ContactUs() {
   useEffect(() => {

@@ -1,28 +1,40 @@
 // Features
-import beach from "./Assets/images/features/beach-umbrella.png";
-import deal from "./Assets/images/features/deal.png";
-import Location from "./Assets/images/icons/location.png";
-import medal from "./Assets/images/features/medal.png";
+import beach from "./assets/images/features/beach-umbrella.png";
+import deal from "./assets/images/features/deal.png";
+import Location from "./assets/images/Icons/location.png";
+import medal from "./assets/images/features/medal.png";
+
+
+
+
+
 
 // Featured Destinations
-import Taj from "./Assets/images/cards/Taj.avif";
-import Havelock from "./Assets/images/cards/Havelock.jpg";
-import Barcelona from "./Assets/images/cards/Barcelona.jpeg";
-import Rome from "./Assets/images/cards/rome.jpeg";
-import bali from "./Assets/images/cards/bali-8838762_1280.jpg";
-import paris from "./Assets/images/cards/paris.jpg";
-import swiss from "./Assets/images/cards/swiss.jpg";
-import Kyoto from "./Assets/images/cards/Kyoto.jpeg";
+import Taj from "./assets/images/cards/Taj.avif";
+import Havelock from "./assets/images/cards/Havelock.jpg";
+import Barcelona from "./assets/images/cards/Barcelona.jpeg";
+import Rome from "./assets/images/cards/rome.jpeg";
+import bali from "./assets/images/cards/bali-8838762_1280.jpg";
+import paris from "./assets/images/cards/paris.jpg";
+import swiss from "./assets/images/cards/swiss.jpg";
+import Kyoto from "./assets/images/cards/Kyoto.jpeg";
+
+
+
+
+
 
 // Icons
-import locationIcon from "./Assets/images/icons/location.png";
-import star from "./Assets/images/icons/star.png";
-import time from "./Assets/images/icons/time.png";
+import locationIcon from "./assets/images/Icons/location.png";
+import star from "./assets/images/Icons/star.png";
+import time from "./assets/images/Icons/time.png";
+
 
 // Contact Page
-import call from "./Assets/images/social/call.png";
-import mail from "./Assets/images/social/mail.png";
-import globe from "./Assets/images/social/globe.png";
+import call from "./assets/images/social/call.png";
+import mail from "./assets/images/social/mail.png";
+import globe from "./assets/images/social/globe.png";
+
 
 
 
