@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect} from "react";
 import { Card, Container, Row, Col } from "react-bootstrap";
 // import video from "./Assets/1.mp4";
 import video from "./assets/videos/1.mp4";
@@ -8,8 +8,10 @@ import { destinations, features, locationIcon, star, time } from "./data";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
+import ImageCarousel from "./scroll/scroll";
 
 const Home = () => {
+
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
@@ -78,6 +80,14 @@ const Home = () => {
     ))}
   </Row>
 </div>
+
+{/* Scroll Section */}
+{/* Scroll Section */}
+<div style={{ paddingLeft: "7%", paddingRight: "7%" }}>
+  <h2 className="mb-4 text-center">Popular Places</h2>
+  <ImageCarousel />
+</div>
+
 
 {/* Featured Destinations Section */}
 <div style={{ paddingLeft: "7%", paddingRight: "7%" }}>

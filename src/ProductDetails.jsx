@@ -3,6 +3,8 @@ import { useParams } from "react-router-dom";
 import { Container, Row, Col, Spinner, Card } from "react-bootstrap";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 // API Map for fetching data based on category
 const apiMap = {
@@ -14,7 +16,6 @@ const ProductDetails = () => {
   const { category, id } = useParams();
   const [product, setProduct] = useState(null);
   const [loading, setLoading] = useState(true);
-
 
   useEffect(() => {
     AOS.init({ duration: 1000 }); // Initialize AOS
@@ -46,6 +47,9 @@ const ProductDetails = () => {
     return <div className="text-center my-5">Package not found</div>;
   }
 
+  const handleBooking = () => {
+    toast.success("Booking successful!");
+  };
   return (
     <Container className="py-5">
       <Row className="align-items-center" style={{ minHeight: "600px" }}>
@@ -56,7 +60,7 @@ const ProductDetails = () => {
           style={{ height: "100%" }}
           data-aos="fade-right"
         >
-          <div style={{ maxWidth: '100%', maxHeight: '500px', height: '100%' }}>
+          <div style={{ maxWidth: "100%", maxHeight: "500px", height: "100%" }}>
             <img
               src={product.image}
               alt={product.title}
@@ -76,20 +80,39 @@ const ProductDetails = () => {
             <Card.Body className="d-flex flex-column justify-content-between h-100">
               <div>
                 <Card.Title className="mb-3">{product.title}</Card.Title>
-                <p><strong>Location:</strong> {product.location}</p>
+                <p>
+                  <strong>Location:</strong> {product.location}
+                </p>
                 <p className="text-muted">{product.description}</p>
-
-                <div className="bg-light p-3 rounded mb-3">
-                  <p><strong>Price:</strong> ₹{product.price}</p>
-                  <p><strong>Days:</strong> {product.days}</p>
-                  <p><strong>Nights:</strong> {product.nights}</p>
+                <div className="bg-light p-3 rounded ">
+                  <p>
+                    <strong>Price:</strong> ₹{product.price}
+                  </p>
+                  <p>
+                    <strong>Days:</strong> {product.days}
+                  </p>
+                  <p>
+                    <strong>Nights:</strong> {product.nights}
+                  </p>
                 </div>
               </div>
-              <p className="mt-auto"><strong>Rating:</strong> ⭐ {product.rating}</p>
+              <div>
+                <p>
+                  <strong>Rating:</strong> ⭐ {product.rating}
+                </p>
+                <button
+                  onClick={handleBooking}
+                  className="btn btn-secondary w-100 mt-3"
+                >
+                  Book Now
+                </button>
+              </div>
             </Card.Body>
           </Card>
         </Col>
       </Row>
+      {/* Toast container */}
+      <ToastContainer position="top-right" autoClose={3000} />
     </Container>
   );
 };

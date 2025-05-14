@@ -195,4 +195,40 @@ const contactUs = [
   },
 ];
 
+import tokyo from './scroll/tour/bangkok.png';
+
+export const images = [
+  {
+    src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHLJuthokCNkpBg2JjTQfh_eWaNgeMuY2xwv4v9MsDbxnwQm7z-LlLOnIwGH-DfovfJj6Rx43P6rs9g6pz0WvKaw',
+    title: "Title 1",
+    text: "Description 1"
+  },
+  {
+    src: tokyo,
+    title: "Title 2",
+    text: "Description 2"
+  },
+  {
+    src: tokyo,
+    title: "Title 3",
+    text: "Description 3"
+  },
+  {
+    src: tokyo,
+    title: "Title 4",
+    text: "Description 4"
+  },
+  {
+    src: tokyo,
+    title: "Title 5",
+    text: "Description 5"
+  },
+  {
+    src: tokyo,
+    title: "Title 6",
+    text: "Description 6"
+  }
+];
+
+
 export { destinations, features, locationIcon, star, time, contactUs };
