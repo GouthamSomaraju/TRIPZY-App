@@ -9,13 +9,12 @@ import About from './About';
 import Packages from './Packages';
 import CategoryPage from './CategoryPage';
 import ProductDetails from './ProductDetails';
-import Login from './Login-Signup/Login'; 
-import SignUp from './Login-Signup/signup';
+import UpcomingPlaces from './UpcomingPlaces';
 
 function AppContent() {
   const location = useLocation();
-  const hideLayoutRoutes = ['/login', '/signup'];
-
+  // Remove login/signup from hideLayoutRoutes
+  const hideLayoutRoutes = [];
   const shouldHideLayout = hideLayoutRoutes.includes(location.pathname);
 
   return (
@@ -26,10 +25,9 @@ function AppContent() {
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/about" element={<About />} />
         <Route path="/packages" element={<Packages />} />
+        <Route path="/upcoming-places" element={<UpcomingPlaces />} />
         <Route path="/:category" element={<CategoryPage />} />
         <Route path="/:category/:id" element={<ProductDetails />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/signup" element={<SignUp />} />
       </Routes>
       {!shouldHideLayout && <Footer />}
     </>

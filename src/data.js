@@ -195,7 +195,54 @@ const contactUs = [
   },
 ];
 
-import tokyo from './scroll/tour/bangkok.png';
+// Upcoming Places (new, unique)
+import bangkok from './scroll/tour/bangkok.png';
+import cancun from './scroll/tour/cancun.png';
+import phiPhi from './scroll/tour/Phi-Phi island.avif';
+import coorg from './scroll/tour/Coorg & Talacauvery, Karnataka.webp';
+import manikarnika from './scroll/tour/Manikarnika Ghat.jpeg';
+import tokyo from './scroll/tour/Tokyo.png';
+
+const upcomingPlaces = [
+  {
+    id: 1,
+    title: 'Bangkok, Thailand',
+    image: bangkok,
+    description: `A vibrant city known for its ornate shrines and lively street life.\nExplore floating markets, grand palaces, and bustling night bazaars.\nBangkok offers a unique blend of tradition and modernity.`,
+  },
+  {
+    id: 2,
+    title: 'Cancun, Mexico',
+    image: cancun,
+    description: `Famous for its white sand beaches and turquoise waters.\nCancun is a gateway to ancient Mayan ruins and vibrant nightlife.\nPerfect for both relaxation and adventure seekers.`,
+  },
+  {
+    id: 3,
+    title: 'Phi-Phi Islands, Thailand',
+    image: phiPhi,
+    description: `A tropical paradise with crystal-clear waters and dramatic cliffs.\nIdeal for snorkeling, diving, and island hopping.\nExperience breathtaking sunsets and vibrant marine life.`,
+  },
+  {
+    id: 4,
+    title: 'Coorg & Talacauvery, Karnataka',
+    image: coorg,
+    description: `Known as the Scotland of India, Coorg is lush and green.\nTalacauvery is the source of the river Cauvery, surrounded by hills.\nEnjoy coffee plantations, waterfalls, and serene landscapes.`,
+  },
+  {
+    id: 5,
+    title: 'Manikarnika Ghat, Varanasi',
+    image: manikarnika,
+    description: `One of the oldest and most sacred ghats in Varanasi.\nWitness ancient rituals on the banks of the Ganges.\nA place of deep spiritual significance and timeless tradition.`,
+  },
+  {
+    id: 6,
+    title: 'Tokyo, Japan',
+    image: tokyo,
+    description: `A dazzling metropolis blending tradition and technology.\nVisit ancient temples, cherry blossom parks, and neon-lit districts.\nTokyo is a city that never ceases to amaze.`,
+  },
+];
+
+import bangkokImg from './scroll/tour/bangkok.png';
 
 export const images = [
   {
@@ -204,31 +251,31 @@ export const images = [
     text: "Description 1"
   },
   {
-    src: tokyo,
+    src: bangkokImg,
     title: "Title 2",
     text: "Description 2"
   },
   {
-    src: tokyo,
+    src: bangkokImg,
     title: "Title 3",
     text: "Description 3"
   },
   {
-    src: tokyo,
+    src: bangkokImg,
     title: "Title 4",
     text: "Description 4"
   },
   {
-    src: tokyo,
+    src: bangkokImg,
     title: "Title 5",
     text: "Description 5"
   },
   {
-    src: tokyo,
+    src: bangkokImg,
     title: "Title 6",
     text: "Description 6"
   }
 ];
 
 
-export { destinations, features, locationIcon, star, time, contactUs };
+export { destinations, features, locationIcon, star, time, contactUs, upcomingPlaces };

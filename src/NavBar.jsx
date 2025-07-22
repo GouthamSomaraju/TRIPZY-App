@@ -41,11 +41,8 @@ const NavBar = () => {
 
           {/* Buttons */}
           <Nav className="text-center gap-2 mt-3 mt-lg-0">
-            <NavLink to="/signup" className="text-decoration-none">
-              <Button variant="outline-dark">SignUp</Button>
-            </NavLink>
-            <NavLink to="/login" className="text-decoration-none">
-              <Button variant="outline-dark">Login</Button>
+            <NavLink to="/upcoming-places" className="text-decoration-none">
+              <Button variant="outline-dark">Upcoming</Button>
             </NavLink>
           </Nav>
         </Navbar.Collapse>

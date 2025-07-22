@@ -81,9 +81,8 @@ const Home = () => {
   </Row>
 </div>
 
-{/* Scroll Section */}
-{/* Scroll Section */}
-<div style={{ paddingLeft: "7%", paddingRight: "7%" }}>
+{/* Scroll Section - hidden on screens <768px */}
+<div className="d-none d-md-block" style={{ paddingLeft: "7%", paddingRight: "7%" }}>
   <h2 className="mb-4 text-center">Popular Places</h2>
   <ImageCarousel />
 </div>
